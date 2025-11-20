@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DelfiASale</string>
+    <string name="groups_title">Групи</string>
+    <string name="products_title">Стоки</string>
+    <string name="receipt_title">Касова бележка</string>
+    <string name="send_sale">Изпрати продажба</string>
+    <string name="empty_receipt">Няма добавени продукти</string>
+</resources>
