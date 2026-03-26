@@ -11,10 +11,17 @@
         android:layout_height="0dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/centerGuide"
+        app:layout_constraintStart_toStartOf="@id/centerGuide"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
     <LinearLayout
         android:id="@+id/receiptPane"
@@ -23,7 +30,7 @@
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/verticalDivider"
+        app:layout_constraintEnd_toStartOf="@id/centerGuide"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -73,7 +80,7 @@
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/verticalDivider"
+        app:layout_constraintStart_toStartOf="@id/centerGuide"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
